@@ -1,5 +1,5 @@
 //
-//  CryViewController.swift
+//  MoViewController.swift
 //  XYQSwift
 //
 //  Created by AlexZHOU on 7/5/16.
@@ -10,13 +10,13 @@ import Foundation
 import UIKit
 
 
-class CryViewController: UIViewController {
+class MoViewController: UIViewController {
+    
+    @IBOutlet weak var mImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        navigationItem.title = "Cry"
     }
     
     override func didReceiveMemoryWarning() {
@@ -24,5 +24,9 @@ class CryViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    
+    @IBAction func close(segue:UIStoryboardSegue){
+        print("CryViewControllerClose")
+    }
+    
 }
