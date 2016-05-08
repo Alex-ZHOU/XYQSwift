@@ -25,8 +25,5 @@ class MoViewController: UIViewController {
     }
     
     
-    @IBAction func close(segue:UIStoryboardSegue){
-        print("CryViewControllerClose")
-    }
     
 }

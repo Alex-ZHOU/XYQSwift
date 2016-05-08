@@ -19,10 +19,10 @@ class TableViewController: UIViewController,UITableViewDataSource,UITableViewDel
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        roles = [RolesModel(mName:"Alex", mSelect:2,mTime:" sa"),
-        RolesModel(mName:"CMK", mSelect:2,mTime:" sa"),
-        RolesModel(mName:"aaa", mSelect:2,mTime:" sa"),
-        RolesModel(mName:"cccc", mSelect:2,mTime:" sa")]
+        roles = [RolesModel(mName:"Alex", mSelect:0,mTime:" sa"),
+        RolesModel(mName:"CMK", mSelect:1,mTime:" sa"),
+        RolesModel(mName:"crj", mSelect:2,mTime:" sa"),
+        RolesModel(mName:"cccc", mSelect:0,mTime:" sa")]
         navigationItem.rightBarButtonItem = editButtonItem()
         
    
@@ -50,8 +50,16 @@ class TableViewController: UIViewController,UITableViewDataSource,UITableViewDel
         
         let name = cell.viewWithTag(234) as! UILabel
         
+        switch role.mSelect {
+        case 0:
+            imageicon.image = UIImage(named: "jxk_icon")
+        case 2:
+            imageicon.image = UIImage(named: "wmr_icon")
+        default:
+            imageicon.image = UIImage(named: "jxk_icon")
+        }
         
-        imageicon.image = UIImage(named: "jxk")
+        
         
         name.text = role.mName
         
@@ -73,7 +81,9 @@ class TableViewController: UIViewController,UITableViewDataSource,UITableViewDel
     }
     
     @IBAction func close(segue:UIStoryboardSegue){
-        print("CryViewControllerClose1111")
+        
+        self.mTableView.reloadData()
+        print("ReloadTableViewData")
     }
 
 }

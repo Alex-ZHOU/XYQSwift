@@ -92,9 +92,11 @@ class CreatingRolesViewController: UIViewController {
     
     @IBAction func mUIButton(sender: UIButton) {
         
-        if(mUITextField.text != nil){
+        if (mUITextField.text != ""){
+            let name = (mUITextField.text)
             print("\(mUITextField.text) \(mSelect)")
-            
+            let role:RolesModel = RolesModel(mName:name!, mSelect:mSelect,mTime:" sa")
+            roles.append(role)
         }
     }
     

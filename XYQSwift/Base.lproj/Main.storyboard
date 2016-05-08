@@ -14,19 +14,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="N8q-Hh-Gpg">
-                                <rect key="frame" x="145" y="333" width="46" height="30"/>
+                                <rect key="frame" x="67" y="490" width="58" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="显示TAB"/>
                                 <connections>
-                                    <segue destination="6qA-4K-UbK" kind="push" id="cDQ-bg-0NM"/>
+                                    <segue destination="6qA-4K-UbK" kind="modal" modalTransitionStyle="flipHorizontal" id="cDQ-bg-0NM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="YN3-OF-o9C">
-                                <rect key="frame" x="152" y="404" width="32" height="30"/>
+                                <rect key="frame" x="216" y="490" width="60" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="todu"/>
+                                <state key="normal" title="显示列表"/>
                                 <connections>
-                                    <segue destination="3pz-v1-TN2" kind="modal" id="8Ur-C9-80R"/>
+                                    <segue destination="3pz-v1-TN2" kind="modal" modalPresentationStyle="currentContext" modalTransitionStyle="flipHorizontal" id="8Ur-C9-80R"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -38,7 +38,7 @@
             </objects>
             <point key="canvasLocation" x="54" y="2177"/>
         </scene>
-        <!--Table View Controller-->
+        <!--列表-->
         <scene sceneID="GQa-aR-nE6">
             <objects>
                 <viewController id="GOH-LI-BHr" customClass="TableViewController" customModule="XYQSwift" customModuleProvider="target" sceneMemberID="viewController">
@@ -62,7 +62,7 @@
                                                     <rect key="frame" x="68" y="8" width="66" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="233" contentMode="center" image="jxk_icon" id="Vg9-Tf-OvV">
@@ -88,12 +88,19 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="lue-lB-eRI"/>
+                    <navigationItem key="navigationItem" title="列表" id="lue-lB-eRI">
+                        <barButtonItem key="leftBarButtonItem" title="返回" id="fIs-lx-aUK">
+                            <connections>
+                                <segue destination="9sB-mb-teY" kind="unwind" unwindAction="close:" id="g64-6W-6yS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="mTableView" destination="iNL-pN-FpP" id="7JQ-Yg-vFQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SOM-0t-KzV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="9sB-mb-teY" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1032" y="2177"/>
         </scene>
@@ -155,7 +162,7 @@
                                 <rect key="frame" x="9" y="223" width="63" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="ur5-E8-8eO">
@@ -171,6 +178,10 @@
                                     <action selector="mUISwitch:" destination="Yw5-7i-bjD" eventType="valueChanged" id="a93-vo-qXd"/>
                                 </connections>
                             </switch>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="jxk" id="hiS-cd-U65">
+                                <rect key="frame" x="32" y="310" width="256" height="256"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="sCj-PC-hmR">
                                 <rect key="frame" x="20" y="272" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -180,10 +191,6 @@
                                     <segue destination="GTW-8B-8h3" kind="unwind" unwindAction="close:" id="caJ-9d-LRq"/>
                                 </connections>
                             </button>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="jxk" id="hiS-cd-U65">
-                                <rect key="frame" x="32" y="310" width="256" height="256"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -211,14 +218,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WX9-Xj-9PH">
-                                <rect key="frame" x="8" y="20" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="返回"/>
-                                <connections>
-                                    <segue destination="aju-9g-XGf" kind="unwind" unwindAction="close:" id="BoM-ml-fm1"/>
-                                </connections>
-                            </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="oHV-nj-WU1">
                                 <rect key="frame" x="26" y="99" width="269" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -243,6 +242,14 @@
                                     </imageView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WX9-Xj-9PH">
+                                <rect key="frame" x="8" y="20" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="返回"/>
+                                <connections>
+                                    <segue destination="aju-9g-XGf" kind="unwind" unwindAction="close:" id="Bqo-BP-p1c"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -354,6 +361,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3pz-v1-TN2" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Qlj-O3-p1v"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qmL-Zd-gVR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

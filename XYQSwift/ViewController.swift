@@ -22,7 +22,7 @@ class ViewController: UIViewController {
 
 
     @IBAction func close(segue:UIStoryboardSegue){
-        print("CryViewControllerClose")
+        print("ReturnMain")
     }
     
 }
