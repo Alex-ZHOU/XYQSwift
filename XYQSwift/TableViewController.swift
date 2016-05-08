@@ -31,7 +31,7 @@ class TableViewController: UIViewController,UITableViewDataSource,UITableViewDel
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-}
+    }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         
@@ -41,7 +41,7 @@ class TableViewController: UIViewController,UITableViewDataSource,UITableViewDel
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
         
-       let cell =  self.mTableView.dequeueReusableCellWithIdentifier("mTableViewCell11")! as UITableViewCell
+       let cell =  self.mTableView.dequeueReusableCellWithIdentifier("mTableViewCell")! as UITableViewCell
         
         let role = roles[indexPath.row] as RolesModel
         
@@ -70,6 +70,10 @@ class TableViewController: UIViewController,UITableViewDataSource,UITableViewDel
     override func setEditing(editing: Bool, animated: Bool) {
         super.setEditing(editing, animated: animated)
         self.mTableView.setEditing(editing, animated: animated)
+    }
+    
+    @IBAction func close(segue:UIStoryboardSegue){
+        print("CryViewControllerClose1111")
     }
 
 }

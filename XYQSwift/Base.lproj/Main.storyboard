@@ -46,36 +46,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="62" sectionHeaderHeight="28" sectionFooterHeight="28" id="woe-ir-vkX">
-                                <rect key="frame" x="0.0" y="65" width="320" height="489"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="67" sectionHeaderHeight="28" sectionFooterHeight="28" id="iNL-pN-FpP">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="mTableViewCell11" rowHeight="62" id="xab-vz-ysg">
-                                        <rect key="frame" x="0.0" y="92" width="320" height="62"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="mTableViewCell" rowHeight="67" id="hye-PX-vpr">
+                                        <rect key="frame" x="0.0" y="92" width="320" height="67"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xab-vz-ysg" id="YL4-3h-YBK">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="61.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hye-PX-vpr" id="MWa-Oa-tvg">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="66.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="233" contentMode="center" image="jxk_icon" id="Yd7-LG-NQz">
-                                                    <rect key="frame" x="8" y="5" width="52" height="52"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" tag="234" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22222" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pcC-Gc-w2s">
-                                                    <rect key="frame" x="131" y="8" width="50" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="234" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="haahhah" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iQX-D7-VVs">
+                                                    <rect key="frame" x="68" y="8" width="66" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="233" contentMode="center" image="jxk_icon" id="Vg9-Tf-OvV">
+                                                    <rect key="frame" x="8" y="8" width="52" height="52"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="GOH-LI-BHr" id="wru-95-h2f"/>
+                                </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="AIE-bF-Mrn">
-                                <rect key="frame" x="255" y="505" width="36" height="36"/>
+                                <rect key="frame" x="267" y="512" width="33" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="roleadd_icon"/>
                                 <connections>
@@ -87,25 +90,116 @@
                     </view>
                     <navigationItem key="navigationItem" id="lue-lB-eRI"/>
                     <connections>
-                        <outlet property="mTableView" destination="woe-ir-vkX" id="lJY-Lt-f5H"/>
+                        <outlet property="mTableView" destination="iNL-pN-FpP" id="7JQ-Yg-vFQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SOM-0t-KzV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1032" y="2177"/>
         </scene>
-        <!--View Controller-->
+        <!--Creating Roles View Controller-->
         <scene sceneID="hTj-jG-9l3">
             <objects>
-                <viewController id="Yw5-7i-bjD" sceneMemberID="viewController">
+                <viewController id="Yw5-7i-bjD" customClass="CreatingRolesViewController" customModule="XYQSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="daV-VF-4IK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="9ct-4o-4NF">
+                                <rect key="frame" x="26" y="81" width="269" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="剑侠客"/>
+                                    <segment title="逍遥生"/>
+                                    <segment title="巫蛮儿"/>
+                                    <segment title="飞燕女"/>
+                                    <segment title="英女侠"/>
+                                </segments>
+                                <connections>
+                                    <action selector="mRenUISegmentedControl:" destination="Yw5-7i-bjD" eventType="valueChanged" id="XeT-Bc-a5w"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="9fD-is-FsZ">
+                                <rect key="frame" x="20" y="126" width="280" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                    <segment title=""/>
+                                    <segment title=""/>
+                                    <segment title=""/>
+                                </segments>
+                                <connections>
+                                    <action selector="mMoUISegmentedControl:" destination="Yw5-7i-bjD" eventType="valueChanged" id="fKu-9e-jAH"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="6Ba-ba-Di2">
+                                <rect key="frame" x="20" y="172" width="280" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                    <segment title=""/>
+                                    <segment title=""/>
+                                    <segment title=""/>
+                                </segments>
+                                <connections>
+                                    <action selector="mXianUISegmentedControl:" destination="Yw5-7i-bjD" eventType="valueChanged" id="V8q-KI-gps"/>
+                                </connections>
+                            </segmentedControl>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="jxk_icon" id="3KU-iJ-5JS">
+                                <rect key="frame" x="248" y="208" width="52" height="52"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名字：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mGK-d0-Bp4">
+                                <rect key="frame" x="9" y="223" width="63" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="ur5-E8-8eO">
+                                <rect key="frame" x="72" y="221" width="168" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="599-Ou-3aa">
+                                <rect key="frame" x="251" y="272" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="mUISwitch:" destination="Yw5-7i-bjD" eventType="valueChanged" id="a93-vo-qXd"/>
+                                </connections>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="sCj-PC-hmR">
+                                <rect key="frame" x="20" y="272" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="确定"/>
+                                <connections>
+                                    <action selector="mUIButton:" destination="Yw5-7i-bjD" eventType="touchUpInside" id="PMk-es-e2l"/>
+                                    <segue destination="GTW-8B-8h3" kind="unwind" unwindAction="close:" id="caJ-9d-LRq"/>
+                                </connections>
+                            </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="jxk" id="hiS-cd-U65">
+                                <rect key="frame" x="32" y="310" width="256" height="256"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="etg-S8-5cS"/>
+                    <connections>
+                        <outlet property="mMoUISegmentedControl" destination="9fD-is-FsZ" id="Oyr-lT-pht"/>
+                        <outlet property="mRenUISegmentedControl" destination="9ct-4o-4NF" id="L4O-Tf-kGD"/>
+                        <outlet property="mUIImageViewBigger" destination="hiS-cd-U65" id="AvI-hB-ybb"/>
+                        <outlet property="mUIImageViewSmall" destination="3KU-iJ-5JS" id="YjG-t1-2h1"/>
+                        <outlet property="mUISwitch" destination="599-Ou-3aa" id="DkA-FU-hOW"/>
+                        <outlet property="mUITextField" destination="ur5-E8-8eO" id="Zg6-0e-NYl"/>
+                        <outlet property="mXianUISegmentedControl" destination="6Ba-ba-Di2" id="Tau-bC-7bx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QkZ-nS-SW0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="GTW-8B-8h3" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1426" y="2177"/>
         </scene>
