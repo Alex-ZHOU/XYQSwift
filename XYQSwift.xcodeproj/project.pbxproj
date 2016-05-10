@@ -20,6 +20,7 @@
 		FA2C2D361CDEFE750085603B /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2C2D351CDEFE750085603B /* TableViewController.swift */; };
 		FA300FC51CDE32D900A561C6 /* RolesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA300FC41CDE32D900A561C6 /* RolesModel.swift */; };
 		FA300FC71CDE33E100A561C6 /* CreatingRolesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA300FC61CDE33E100A561C6 /* CreatingRolesViewController.swift */; };
+		FA83FD861CE185F3002F9389 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA83FD851CE185F3002F9389 /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		FA2C2D351CDEFE750085603B /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		FA300FC41CDE32D900A561C6 /* RolesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RolesModel.swift; sourceTree = "<group>"; };
 		FA300FC61CDE33E100A561C6 /* CreatingRolesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatingRolesViewController.swift; sourceTree = "<group>"; };
+		FA83FD841CE1829C002F9389 /* TestsPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TestsPlayground.playground; sourceTree = "<group>"; };
+		FA83FD851CE185F3002F9389 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +119,7 @@
 				FA0EC89F1CDDC483005504A2 /* RenViewController.swift */,
 				FA2C2D351CDEFE750085603B /* TableViewController.swift */,
 				FA300FC61CDE33E100A561C6 /* CreatingRolesViewController.swift */,
+				FA83FD851CE185F3002F9389 /* WebViewController.swift */,
 				FA0EC8721CDDA3A3005504A2 /* Main.storyboard */,
 				FA0EC8781CDDA3A3005504A2 /* Assets.xcassets */,
 				FA0EC87A1CDDA3A3005504A2 /* LaunchScreen.storyboard */,
@@ -130,6 +134,7 @@
 			children = (
 				FA0EC8861CDDA3A3005504A2 /* XYQSwiftTests.swift */,
 				FA0EC8881CDDA3A3005504A2 /* Info.plist */,
+				FA83FD841CE1829C002F9389 /* TestsPlayground.playground */,
 			);
 			path = XYQSwiftTests;
 			sourceTree = "<group>";
@@ -275,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA0EC8711CDDA3A3005504A2 /* ViewController.swift in Sources */,
+				FA83FD861CE185F3002F9389 /* WebViewController.swift in Sources */,
 				FA0EC8A21CDE017C005504A2 /* MoViewController.swift in Sources */,
 				FA300FC51CDE32D900A561C6 /* RolesModel.swift in Sources */,
 				FA2C2D361CDEFE750085603B /* TableViewController.swift in Sources */,
