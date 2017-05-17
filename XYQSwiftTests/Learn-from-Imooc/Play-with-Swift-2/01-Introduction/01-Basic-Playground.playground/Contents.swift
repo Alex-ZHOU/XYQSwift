@@ -2,7 +2,7 @@
 
 import UIKit
 
-var str = "Hello, playground"
+var str = "Basic-Playground"
 
 let a = 100
 let b = 300
