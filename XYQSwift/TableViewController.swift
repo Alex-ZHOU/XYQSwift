@@ -23,7 +23,7 @@ class TableViewController: UIViewController,UITableViewDataSource,UITableViewDel
         RolesModel(mName:"CMK", mSelect:1,mTime:" sa"),
         RolesModel(mName:"crj", mSelect:2,mTime:" sa"),
         RolesModel(mName:"cccc", mSelect:0,mTime:" sa")]
-        navigationItem.rightBarButtonItem = editButtonItem()
+        navigationItem.rightBarButtonItem = editButtonItem
         
    
     }
@@ -33,15 +33,15 @@ class TableViewController: UIViewController,UITableViewDataSource,UITableViewDel
         // Dispose of any resources that can be recreated.
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         
             return roles.count
     }
     
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         
-       let cell =  self.mTableView.dequeueReusableCellWithIdentifier("mTableViewCell")! as UITableViewCell
+       let cell =  self.mTableView.dequeueReusableCell(withIdentifier: "mTableViewCell")! as UITableViewCell
         
         let role = roles[indexPath.row] as RolesModel
         
@@ -66,21 +66,21 @@ class TableViewController: UIViewController,UITableViewDataSource,UITableViewDel
         return cell
     }
     
-    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath){
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath){
         
-        if editingStyle==UITableViewCellEditingStyle.Delete {
-            roles.removeAtIndex(indexPath.row)
+        if editingStyle==UITableViewCellEditingStyle.delete {
+            roles.remove(at: indexPath.row)
             //self.mTableView.reloadData()
-            self.mTableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
+            self.mTableView.deleteRows(at: [indexPath], with: UITableViewRowAnimation.automatic)
         }
     }
     
-    override func setEditing(editing: Bool, animated: Bool) {
+    override func setEditing(_ editing: Bool, animated: Bool) {
         super.setEditing(editing, animated: animated)
         self.mTableView.setEditing(editing, animated: animated)
     }
     
-    @IBAction func close(segue:UIStoryboardSegue){
+    @IBAction func close(_ segue:UIStoryboardSegue){
         
         self.mTableView.reloadData()
         print("ReloadTableViewData")

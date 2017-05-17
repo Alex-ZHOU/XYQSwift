@@ -60,8 +60,9 @@
 		FA2C2D351CDEFE750085603B /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		FA300FC41CDE32D900A561C6 /* RolesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RolesModel.swift; sourceTree = "<group>"; };
 		FA300FC61CDE33E100A561C6 /* CreatingRolesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatingRolesViewController.swift; sourceTree = "<group>"; };
-		FA83FD841CE1829C002F9389 /* TestsPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TestsPlayground.playground; sourceTree = "<group>"; };
 		FA83FD851CE185F3002F9389 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		FABC335C1ECC3A56001702A6 /* Basic-Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Basic-Playground.playground"; sourceTree = "<group>"; };
+		FAFC564E1ECC2E350095D01E /* ImoocPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ImoocPlayground.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,9 +133,9 @@
 		FA0EC8851CDDA3A3005504A2 /* XYQSwiftTests */ = {
 			isa = PBXGroup;
 			children = (
+				FABC33591ECC38F5001702A6 /* Learn-from-Imooc */,
 				FA0EC8861CDDA3A3005504A2 /* XYQSwiftTests.swift */,
 				FA0EC8881CDDA3A3005504A2 /* Info.plist */,
-				FA83FD841CE1829C002F9389 /* TestsPlayground.playground */,
 			);
 			path = XYQSwiftTests;
 			sourceTree = "<group>";
@@ -146,6 +147,31 @@
 				FA0EC8931CDDA3A3005504A2 /* Info.plist */,
 			);
 			path = XYQSwiftUITests;
+			sourceTree = "<group>";
+		};
+		FABC33591ECC38F5001702A6 /* Learn-from-Imooc */ = {
+			isa = PBXGroup;
+			children = (
+				FABC335A1ECC3948001702A6 /* Play-with-Swift-2 */,
+				FAFC564E1ECC2E350095D01E /* ImoocPlayground.playground */,
+			);
+			name = "Learn-from-Imooc";
+			sourceTree = "<group>";
+		};
+		FABC335A1ECC3948001702A6 /* Play-with-Swift-2 */ = {
+			isa = PBXGroup;
+			children = (
+				FABC335B1ECC3A15001702A6 /* 01-Introduction */,
+			);
+			name = "Play-with-Swift-2";
+			sourceTree = "<group>";
+		};
+		FABC335B1ECC3A15001702A6 /* 01-Introduction */ = {
+			isa = PBXGroup;
+			children = (
+				FABC335C1ECC3A56001702A6 /* Basic-Playground.playground */,
+			);
+			name = "01-Introduction";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,13 +242,16 @@
 				TargetAttributes = {
 					FA0EC86A1CDDA3A3005504A2 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0830;
 					};
 					FA0EC8811CDDA3A3005504A2 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0830;
 						TestTargetID = FA0EC86A1CDDA3A3005504A2;
 					};
 					FA0EC88C1CDDA3A3005504A2 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0830;
 						TestTargetID = FA0EC86A1CDDA3A3005504A2;
 					};
 				};
@@ -435,6 +464,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xiaoai.XYQSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -446,6 +476,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xiaoai.XYQSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -457,6 +488,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xiaoai.XYQSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XYQSwift.app/XYQSwift";
 			};
 			name = Debug;
@@ -469,6 +501,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xiaoai.XYQSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XYQSwift.app/XYQSwift";
 			};
 			name = Release;
@@ -480,6 +513,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xiaoai.XYQSwiftUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = XYQSwift;
 			};
 			name = Debug;
@@ -491,6 +525,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xiaoai.XYQSwiftUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = XYQSwift;
 			};
 			name = Release;

@@ -32,21 +32,21 @@ class RenViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func mShareUIBarButtonItem(sender: UIBarButtonItem) {
+    @IBAction func mShareUIBarButtonItem(_ sender: UIBarButtonItem) {
         
         let con:SLComposeViewController = SLComposeViewController(forServiceType:SLServiceTypeTwitter)
         
         con.setInitialText("hahahahah")
         
-        con.addImage(mImageView.image)
+        con.add(mImageView.image)
         
         
         
-        self.presentViewController(con,animated:true,completion:nil)
+        self.present(con,animated:true,completion:nil)
         
     }
 
-    @IBAction func mUISegmentedControl(sender: UISegmentedControl) {
+    @IBAction func mUISegmentedControl(_ sender: UISegmentedControl) {
         mSelect = sender.selectedSegmentIndex
          mUINavigationItem.title = "Cry"
         switch mSelect {

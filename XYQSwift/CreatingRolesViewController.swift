@@ -37,7 +37,7 @@ class CreatingRolesViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        mIsWeapon = mUISwitch.on
+        mIsWeapon = mUISwitch.isOn
         
         mSelect = 0
         
@@ -57,7 +57,7 @@ class CreatingRolesViewController: UIViewController {
     
   
     
-    @IBAction func mRenUISegmentedControl(sender: UISegmentedControl) {
+    @IBAction func mRenUISegmentedControl(_ sender: UISegmentedControl) {
         mSelect =  mRenUISegmentedControl.selectedSegmentIndex
         
         mMoUISegmentedControl.selectedSegmentIndex = -1
@@ -66,7 +66,7 @@ class CreatingRolesViewController: UIViewController {
         changeshow()
     }
     
-    @IBAction func mMoUISegmentedControl(sender: UISegmentedControl) {
+    @IBAction func mMoUISegmentedControl(_ sender: UISegmentedControl) {
         mSelect =  mMoUISegmentedControl.selectedSegmentIndex
         
         mRenUISegmentedControl.selectedSegmentIndex = -1
@@ -75,7 +75,7 @@ class CreatingRolesViewController: UIViewController {
         changeshow()
     }
     
-    @IBAction func mXianUISegmentedControl(sender: UISegmentedControl) {
+    @IBAction func mXianUISegmentedControl(_ sender: UISegmentedControl) {
         mSelect =  mXianUISegmentedControl.selectedSegmentIndex
         
         mRenUISegmentedControl.selectedSegmentIndex = -1
@@ -84,13 +84,13 @@ class CreatingRolesViewController: UIViewController {
         changeshow()
     }
     
-    @IBAction func mUISwitch(sender: UISwitch) {
-        mIsWeapon = sender.on
+    @IBAction func mUISwitch(_ sender: UISwitch) {
+        mIsWeapon = sender.isOn
         changeshow()
     }
     
     
-    @IBAction func mUIButton(sender: UIButton) {
+    @IBAction func mUIButton(_ sender: UIButton) {
         
         if (mUITextField.text != ""){
             let name = (mUITextField.text)

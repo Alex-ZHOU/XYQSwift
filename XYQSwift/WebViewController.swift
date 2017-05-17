@@ -20,7 +20,7 @@ class WebViewController: UIViewController {
         webView.frame = self.view.bounds
         self.view.addSubview(webView)
         
-        let url:NSURL;
+        let url:URL;
         
         // hahah
         

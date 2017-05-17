@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     }
 
 
-    @IBAction func close(segue:UIStoryboardSegue){
+    @IBAction func close(_ segue:UIStoryboardSegue){
         print("ReturnMain")
     }
     
