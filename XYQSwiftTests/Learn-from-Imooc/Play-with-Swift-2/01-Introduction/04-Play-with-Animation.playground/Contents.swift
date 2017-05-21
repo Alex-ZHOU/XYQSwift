@@ -1,9 +1,15 @@
-//: Playground - noun: a place where people can play
-
+//
+//  04-Play-with-Animation.playground
+//
+//  Created by AlexZHOU on 16/05/2017.
+//  Copyright © 2016年 AlexZHOU. All rights reserved.
+//
 import UIKit
 import PlaygroundSupport
 
-var str = "Play-with-Animation"
+var str = "04-Play-with-Animation"
+print(str)
+
 
 let containerView = UIView(frame: CGRect(x: 0, y: 0, width: 320, height: 480))
 

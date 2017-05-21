@@ -1,8 +1,16 @@
-//: Playground - noun: a place where people can play
+//
+//  2-6 Swift 2.0基本类型之其他：变量名、print和注释
+//  06-Others.playground
+//
+//  Created by AlexZHOU on 16/05/2017.
+//  Copyright © 2016年 AlexZHOU. All rights reserved.
+//
 
 import UIKit
 
-var str = "Others"
+var str = "06-Others"
+print(str)
+
 
 // 类型名，第一个字母大写
 // 变量名，第一个字母小写

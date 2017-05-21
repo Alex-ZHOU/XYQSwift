@@ -1,8 +1,16 @@
-//: Playground - noun: a place where people can play
+//
+//  2-5 Swift 2.0基本类型之元组
+//  05-Tuple.playground
+//
+//  Created by AlexZHOU on 16/05/2017.
+//  Copyright © 2016年 AlexZHOU. All rights reserved.
+//
 
 import UIKit
 
-var str = "Tuple"
+var str = "05-Tuple"
+print(str)
+
 
 // 元组
 var point = (5,2)

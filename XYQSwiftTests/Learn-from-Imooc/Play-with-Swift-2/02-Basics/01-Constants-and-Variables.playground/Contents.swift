@@ -1,8 +1,15 @@
-//: Playground - noun: a place where people can play
+//
+//  2-1 Swift 2.0基本类型之常量、变量和声明
+//  01-Constants-and-Variables.playground
+//
+//  Created by AlexZHOU on 16/05/2017.
+//  Copyright © 2016年 AlexZHOU. All rights reserved.
+//
 
 import UIKit
 
-var str = "Constants-and-Variables"
+var str = "01-Constants-and-Variables"
+print(str)
 
 
 let maxNum = 1000

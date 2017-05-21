@@ -1,8 +1,16 @@
-//: Playground - noun: a place where people can play
+//
+//  2-3 Swift 2.0基本类型之浮点数和类型转换
+//  03-1-Float-and-Double.playground
+//
+//  Created by AlexZHOU on 16/05/2017.
+//  Copyright © 2016年 AlexZHOU. All rights reserved.
+//
 
 import UIKit
 
-var str = "Float-and-Double"
+var str = "03-1-Float-and-Double"
+print(str)
+
 
 var x = 3.1415926
 

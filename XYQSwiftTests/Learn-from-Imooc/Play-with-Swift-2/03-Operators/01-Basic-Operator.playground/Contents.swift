@@ -1,8 +1,15 @@
-//: Playground - noun: a place where people can play
-
+//
+//  3-1 Swift 2.0运算符之基础运算符
+//  01-Basic-Operator.playground
+//
+//  Created by AlexZHOU on 21/05/2017.
+//  Copyright © 2016年 AlexZHOU. All rights reserved.
+//
 import UIKit
 
-var str = "Basic-Operator"
+var str = "01-Basic-Operator"
+print(str)
+
 
 // 赋值运算符
 var a = 3

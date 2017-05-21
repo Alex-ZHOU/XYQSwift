@@ -1,8 +1,15 @@
-//: Playground - noun: a place where people can play
+//
+//  02-Function-Visualization.playground
+//
+//  Created by AlexZHOU on 16/05/2017.
+//  Copyright © 2016年 AlexZHOU. All rights reserved.
+//
 
 import UIKit
 
-var str = "Function-Visualization"
+var str = "02-Function-Visualization"
+print(str)
+
 
 var value = 2
 

@@ -1,10 +1,17 @@
-//: Playground - noun: a place where people can play
+//
+//  03-Play-with-UIKit.playground
+//
+//  Created by AlexZHOU on 16/05/2017.
+//  Copyright © 2016年 AlexZHOU. All rights reserved.
+//
 
 import UIKit
 import XCPlayground
 import PlaygroundSupport
 
-var str = "Play-with-UIKit"
+var str = "03-Play-with-UIKit"
+print(str)
+
 
 let view = UIView(frame: CGRect(x:0,y:0,width:320,height:480))
 view.backgroundColor = UIColor.orange

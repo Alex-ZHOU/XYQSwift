@@ -1,8 +1,16 @@
-//: Playground - noun: a place where people can play
+//
+//  2-4 Swift 2.0基本类型之布尔类型和简单的if语句
+//  04-Boolean-and-if.playground
+//
+//  Created by AlexZHOU on 16/05/2017.
+//  Copyright © 2016年 AlexZHOU. All rights reserved.
+//
 
 import UIKit
 
-var str = "Boolean-and-if"
+var str = "04-Boolean-and-if"
+print(str)
+
 
 let imTrue = true
 let imFalse = false

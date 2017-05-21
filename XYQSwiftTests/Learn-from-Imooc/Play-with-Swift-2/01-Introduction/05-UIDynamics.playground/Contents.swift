@@ -1,7 +1,12 @@
-//: Playground - noun: a place where people can play
-
+//
+//  05-UIDynamics.playground
+//
+//  Created by AlexZHOU on 16/05/2017.
+//  Copyright © 2016年 AlexZHOU. All rights reserved.
+//
 import UIKit
 import PlaygroundSupport
 
-var str = "UIDynamics"
+var str = "05-UIDynamics"
+print(str)
 

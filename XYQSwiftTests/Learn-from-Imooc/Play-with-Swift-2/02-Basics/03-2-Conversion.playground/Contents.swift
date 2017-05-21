@@ -1,8 +1,16 @@
-//: Playground - noun: a place where people can play
+//
+//  2-3 Swift 2.0基本类型之浮点数和类型转换
+//  03-2-Conversion.playground
+//
+//  Created by AlexZHOU on 16/05/2017.
+//  Copyright © 2016年 AlexZHOU. All rights reserved.
+//
 
 import UIKit
 
-var str = "Conversion"
+var str = "03-2-Conversion"
+print(str)
+
 
 let x: UInt16 = 100
 let y: UInt8  = 20

@@ -1,8 +1,15 @@
-//: Playground - noun: a place where people can play
-
+//
+//  2-2 Swift 2.0基本类型之整型
+//  02-Int.playground
+//
+//  Created by AlexZHOU on 16/05/2017.
+//  Copyright © 2016年 AlexZHOU. All rights reserved.
+//
 import UIKit
 
-var str = "Int"
+var str = "02-Int"
+print(str)
+
 
 // 整型Int
 var imInt:Int = 88
